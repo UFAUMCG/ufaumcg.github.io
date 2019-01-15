@@ -689,7 +689,6 @@ i {
 .landing-container {
   height: calc(100vh - 100px);
   position: relative;
-  background: url("../public/img/sp19/group19edit.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

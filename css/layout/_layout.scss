@@ -2,10 +2,22 @@
   margin: 3rem 20rem;
 }
 
-.landing-container {
+.flyer-container {
   height: calc(100vh - 100px);
   position: relative;
   background: url("../public/img/team1.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+  filter: grayscale(0%);
+}
+
+.landing-container {
+  height: calc(100vh - 100px);
+  position: relative;
+  background: url("../public/img/sp20/digitalflyer.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

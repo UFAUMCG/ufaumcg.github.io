@@ -689,7 +689,7 @@ i {
 .landing-container {
   height: calc(100vh - 100px);
   position: relative;
-    background: url("../public/img/f21/fa21org.jpg") no-repeat center center fixed;
+    background: url("../public/img/f21/fa21team.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="./css/font-awesome/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-      /* Ensures the Airtable frame sits nicely in the center of your page */
       .airtable-container {
         padding: 40px 20px;
         max-width: 1000px;
@@ -17,15 +16,37 @@
         text-align: center;
       }
       
+      .intro-text {
+        font-family: 'Montserrat', sans-serif;
+        color: #333;
+        margin-bottom: 30px;
+        line-height: 1.6;
+      }
+
+      .intro-text h2 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+      }
+
+      .intro-text p {
+        font-size: 1.1rem;
+        max-width: 800px;
+        margin: 0 auto 10px auto;
+      }
+
       .airtable-embed {
         border-radius: 8px;
         box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        margin-top: 20px;
       }
 
-      h2 {
-        font-family: 'Montserrat', sans-serif;
-        color: #333;
-        margin-bottom: 20px;
+      .contact-link {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      .contact-link:hover {
+        text-decoration: underline;
       }
     </style>
   </head>
@@ -44,7 +65,18 @@
     <div class="body-container">
       
       <div class="airtable-container">
-        <h2>Our Team</h2>
+        <div class="intro-text">
+          <h2>We are super excited to meet you!</h2>
+          <p>Schedule coffee chats with us using our Calendly links :)</p>
+          <p>
+        
+            Feel free to reach out to us at 
+            <a class="contact-link" href="mailto:derekzhang@berkeley.edu">derekzhang@berkeley.edu</a> or 
+            <a class="contact-link" href="mailto:tian_chiu@berkeley.edu">tian_chiu@berkeley.edu</a> 
+            if you have any questions!
+          </p>
+        </div>
+
         <iframe 
           class="airtable-embed" 
           src="https://airtable.com/embed/appOMV2hzKlABk7Gr/shrlVqSzpcfRUfvtI" 

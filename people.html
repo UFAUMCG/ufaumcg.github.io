@@ -9,13 +9,23 @@
     <link rel="stylesheet" href="./css/font-awesome/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-      /* Temporary style to make the text pop */
-      .coming-soon {
+      /* Ensures the Airtable frame sits nicely in the center of your page */
+      .airtable-container {
+        padding: 40px 20px;
+        max-width: 1000px;
+        margin: 0 auto;
         text-align: center;
+      }
+      
+      .airtable-embed {
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      }
+
+      h2 {
         font-family: 'Montserrat', sans-serif;
-        padding: 100px 20px;
-        font-size: 2rem;
         color: #333;
+        margin-bottom: 20px;
       }
     </style>
   </head>
@@ -32,9 +42,18 @@
     </div>
     
     <div class="body-container">
-      <div class="coming-soon">
-        <h2>Coming Soon</h2>
-        <p>We are currently updating our team directory. Stay tuned!</p>
+      
+      <div class="airtable-container">
+        <h2>Our Team</h2>
+        <iframe 
+          class="airtable-embed" 
+          src="https://airtable.com/embed/appOMV2hzKlABk7Gr/shrlVqSzpcfRUfvtI" 
+          frameborder="0" 
+          onmousewheel="" 
+          width="100%" 
+          height="600" 
+          style="background: transparent; border: 1px solid #ccc;">
+        </iframe>
       </div>
 
       <div class="footer-pill">
@@ -45,6 +64,7 @@
         </span>
       </div>
     </div>
+
     <script src="/scripts/jquery.min.js"></script>
     <script src="/scripts/menu.js"></script>
   </body>

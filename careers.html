@@ -133,7 +133,7 @@
     });
     let pos = 0;
     function animateMarquee() {
-      pos -= 0.8;
+      pos -= 0.5;
       if (Math.abs(pos) >= track.scrollWidth / 2) pos = 0;
       track.style.transform = `translateX(${pos}px)`;
       requestAnimationFrame(animateMarquee);

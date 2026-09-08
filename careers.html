@@ -94,11 +94,11 @@
       { name: 'Barclays', file: 'barclays.jpg' },
       { name: 'Strategy&', file: 'strategy.jpg' },
       { name: 'Jane Street', file: 'jane-street.webp' },
-      { name: 'WestBridge Capital', file: 'westbridge-capital.jpg' },
+      { name: 'WestBridge Capital', file: 'westbridge-capital.webp' },
       { name: 'Evercore', file: 'evercore.jpg' },
       { name: 'Wells Fargo', file: 'wells-fargo.png' },
       { name: 'Citi', file: 'citi.jpg' },
-      { name: 'LEK', file: 'lek.png' },
+      { name: 'LEK', file: 'lek.png', scale: 0.7 },
       { name: 'Bain & Company', file: 'bain-company.png' },
       { name: 'McKinsey', file: 'mckinsey.png' },
       { name: 'Ares', file: 'ares.png' },
@@ -118,6 +118,10 @@
       const img = document.createElement('img');
       img.src = `${LOGO_DIR}${logo.file}`;
       img.alt = logo.name;
+      if (logo.scale) {
+        img.style.maxWidth = `${logo.scale * 100}%`;
+        img.style.maxHeight = `${logo.scale * 100}%`;
+      }
       card.appendChild(img);
       return card;
     }
@@ -129,7 +133,7 @@
     });
     let pos = 0;
     function animateMarquee() {
-      pos -= 0.9;
+      pos -= 1.6;
       if (Math.abs(pos) >= track.scrollWidth / 2) pos = 0;
       track.style.transform = `translateX(${pos}px)`;
       requestAnimationFrame(animateMarquee);

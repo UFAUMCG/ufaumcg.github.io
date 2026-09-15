@@ -88,12 +88,12 @@
   <script src="/scripts/menu.js"></script>
   <script>
     const ENTRIES = [
-      { type: "fulltime", year: "2027", category: "Investment Banking", name: "Maxwell Love", company: "Centerview Partners", group: "Life Sciences", location: "San Francisco, CA" },
-      { type: "fulltime", year: "2027", category: "Investment Banking", name: "Maya Rao", company: "Centerview Partners", group: "Life Sciences", location: "San Francisco, CA" },
       { type: "fulltime", year: "2027", category: "Investment Banking", name: "Lucy Wang", company: "Goldman Sachs", group: "Healthcare", location: "San Francisco, CA" },
       { type: "fulltime", year: "2027", category: "Investment Banking", name: "Clement Liu", company: "JP Morgan", group: "Technology", location: "San Francisco, CA" },
       { type: "fulltime", year: "2027", category: "Investment Banking", name: "Vaishu Enduri", company: "Morgan Stanley", group: "Technology", location: "Menlo Park, CA" },
       { type: "fulltime", year: "2027", category: "Investment Banking", name: "Cindy Wang", company: "Morgan Stanley", group: "Technology", location: "Menlo Park, CA" },
+      { type: "fulltime", year: "2027", category: "Investment Banking", name: "Maya Rao", company: "Centerview Partners", group: "Life Sciences", location: "San Francisco, CA" },
+      { type: "fulltime", year: "2027", category: "Investment Banking", name: "Maxwell Love", company: "Centerview Partners", group: "Life Sciences", location: "San Francisco, CA" },
       { type: "fulltime", year: "2027", category: "Finance", name: "Mateo Cervantes", company: "Ares", group: "Private Equity", location: "Los Angeles, CA" },
       { type: "fulltime", year: "2027", category: "Consulting", name: "Cornellius Suhartono", company: "McKinsey", group: "Generalist", location: "New York, NY" },
       { type: "fulltime", year: "2027", category: "Consulting", name: "Niah Goudar", company: "Bain & Company", group: "PEG", location: "San Francisco, CA" },
@@ -101,23 +101,24 @@
       { type: "fulltime", year: "2027", category: "Consulting", name: "Michelle Geng", company: "LEK", group: "Generalist", location: "Los Angeles, CA" },
       { type: "internships", year: "2027", category: "Investment Banking", name: "Sarani Puri", company: "JP Morgan", group: "Technology", location: "San Francisco, CA" },
       { type: "internships", year: "2027", category: "Investment Banking", name: "Ishraq Hossain", company: "Perella Weinberg Partners", group: "Technology", location: "San Francisco, CA" },
+      { type: "internships", year: "2027", category: "Investment Banking", name: "Arav Singh", company: "William Blair", group: "Technology", location: "San Francisco, CA" },
       { type: "internships", year: "2027", category: "Investment Banking", name: "Grace Chen", company: "Morgan Stanley", group: "Technology", location: "Menlo Park, CA" },
       { type: "internships", year: "2027", category: "Investment Banking", name: "Sarabeth Huang", company: "Evercore", group: "Technology", location: "Menlo Park, CA" },
       { type: "internships", year: "2027", category: "Investment Banking", name: "Beau Revenaugh", company: "Houlihan Lokey", group: "Restructuring", location: "Los Angeles, CA" },
       { type: "internships", year: "2027", category: "Investment Banking", name: "Tian Chiu", company: "Centerview Partners", group: "Generalist M&A", location: "New York, NY" },
       { type: "internships", year: "2027", category: "Investment Banking", name: "Tyler Carmel", company: "Moelis & Company", group: "Healthcare", location: "San Francisco, CA" },
       { type: "internships", year: "2027", category: "Investment Banking", name: "Daniel Weizmann", company: "Citizens", group: "Consumer", location: "Los Angeles, CA" },
-      { type: "internships", year: "2027", category: "Finance", name: "Aaryan Nema", company: "KKR", group: "REPE", location: "San Francisco, CA" },
+      { type: "internships", year: "2027", category: "Finance", name: "Aaryan Nema", company: "KKR", group: "REPE", location: "" },
       { type: "internships", year: "2027", category: "Consulting", name: "Pierce Bergstein", company: "McKinsey", group: "Generalist", location: "New York, NY" },
       { type: "internships", year: "2027", category: "Consulting", name: "Samaira Mehta", company: "McKinsey", group: "Generalist", location: "San Francisco, CA" },
       { type: "internships", year: "2027", category: "Consulting", name: "Sagar Bhatia", company: "BCG", group: "Generalist", location: "San Francisco, CA" },
       { type: "fulltime", year: "2026", category: "Investment Banking", name: "Aiden Chan", company: "Citi", group: "Technology", location: "New York, NY" },
       { type: "fulltime", year: "2026", category: "Investment Banking", name: "Jason Cai", company: "Barclays", group: "Technology", location: "San Francisco, CA" },
       { type: "fulltime", year: "2026", category: "Investment Banking", name: "Harshita Somani", company: "Wells Fargo", group: "M&A", location: "New York, NY" },
-      { type: "fulltime", year: "2026", category: "Finance", name: "Kristen Joo", company: "Evercore", group: "Technology M&A", location: "Menlo Park, CA" },
+      { type: "fulltime", year: "2026", category: "Investment Banking", name: "Kristen Joo", company: "Evercore", group: "Technology", location: "Menlo Park, CA" },
       { type: "fulltime", year: "2026", category: "Finance", name: "Sathya Panchu", company: "WestBridge Capital", group: "Crossover", location: "San Mateo, CA" },
       { type: "fulltime", year: "2026", category: "Consulting", name: "Eugene Jang", company: "McKinsey & Company", group: "Generalist", location: "San Francisco, CA" },
-      { type: "fulltime", year: "2026", category: "Consulting", name: "Maya Wu", company: "Jane Street", group: "Strategy & Product", location: "New York, NY" },
+      { type: "fulltime", year: "2026", category: "Other", name: "Maya Wu", company: "Jane Street", group: "Strategy & Product", location: "New York, NY" },
       { type: "fulltime", year: "2026", category: "Consulting", name: "Hannah Wang", company: "Strategy&", group: "Strategy & Product", location: "San Francisco, CA" },
       { type: "fulltime", year: "2026", category: "Consulting", name: "Sahil Malhotra", company: "McKinsey", group: "Generalist", location: "San Francisco, CA" },
       { type: "internships", year: "2026", category: "Investment Banking", name: "Clement Liu", company: "JP Morgan", group: "Technology", location: "San Francisco, CA" },
@@ -135,7 +136,7 @@
       { type: "internships", year: "2026", category: "Investment Banking", name: "Kristen Joo", company: "Evercore", group: "Technology", location: "Menlo Park, CA" },
       { type: "internships", year: "2026", category: "Investment Banking", name: "Jason Cai", company: "Barclays", group: "Technology", location: "San Francisco, CA" },
       { type: "internships", year: "2026", category: "Finance", name: "Mateo Cervantes", company: "Ares", group: "Private Equity", location: "Los Angeles, CA" },
-      { type: "internships", year: "2026", category: "Finance", name: "Cornellius Suhartono", company: "Ramp", group: "AI Product Innovation", location: "New York, NY" },
+      { type: "internships", year: "2026", category: "Other", name: "Cornellius Suhartono", company: "Ramp", group: "AI Product Innovation", location: "New York, NY" },
       { type: "internships", year: "2026", category: "Finance", name: "Tian Chiu", company: "The Riverside Company", group: "Private Equity", location: "New York, NY" },
       { type: "internships", year: "2026", category: "Finance", name: "Sarabeth Huang", company: "Silversmith Capital Partners", group: "Venture Capital", location: "Boston, MA" },
       { type: "internships", year: "2026", category: "Finance", name: "Aaryan Nema", company: "Bridge Investment Group", group: "Real Estate Private Equity", location: "Salt Lake City, UT" },
@@ -179,7 +180,7 @@
       { type: "fulltime", year: "2024", category: "Consulting", name: "Roma Bedekar", company: "GRAPH Strategy", group: "Strategy", location: "Washington, D.C." },
       { type: "fulltime", year: "2024", category: "Finance", name: "Albert Li", company: "Warburg Pincus", group: "Generalist", location: "New York, NY" },
       { type: "fulltime", year: "2024", category: "Finance", name: "Michael Huang", company: "Audax Private Equity", group: "Generalist", location: "San Francisco, CA" },
-      { type: "fulltime", year: "2024", category: "Technology", name: "Tia Chang", company: "Databricks", group: "Product Management", location: "San Francisco, CA" },
+      { type: "fulltime", year: "2024", category: "Other", name: "Tia Chang", company: "Databricks", group: "Product Management", location: "San Francisco, CA" },
       { type: "internships", year: "2024", category: "Investment Banking", name: "Hailey Kim", company: "Barclays", group: "Generalist", location: "New York, NY" },
       { type: "internships", year: "2024", category: "Investment Banking", name: "Anson Seto", company: "Barclays", group: "Healthcare", location: "San Francisco, CA" },
       { type: "internships", year: "2024", category: "Investment Banking", name: "Joyce Chiang", company: "Morgan Stanley", group: "Financial Sponsors & Western Region Coverage", location: "San Francisco, CA" },
@@ -200,8 +201,8 @@
       { type: "internships", year: "2024", category: "Finance", name: "Aiden Chan", company: "Vector Capital", group: "Private Equity", location: "San Francisco, CA" },
       { type: "internships", year: "2024", category: "Finance", name: "Sathya Panchu", company: "WestBridge Capital", group: "Crossover", location: "San Mateo, CA" },
       { type: "internships", year: "2024", category: "Finance", name: "Jason Cai", company: "K1 Investment Management", group: "Enterprise Software", location: "Manhattan Beach, CA" },
-      { type: "internships", year: "2024", category: "Corporate", name: "Adrian Tran", company: "IBM", group: "Strategy", location: "New York, NY" },
-      { type: "internships", year: "2024", category: "Corporate", name: "Hannah Wang", company: "Workaday", group: "Growth", location: "San Francisco, CA" },
+      { type: "internships", year: "2024", category: "Other", name: "Adrian Tran", company: "IBM", group: "Strategy", location: "New York, NY" },
+      { type: "internships", year: "2024", category: "Other", name: "Hannah Wang", company: "Workaday", group: "Growth", location: "San Francisco, CA" },
       { type: "fulltime", year: "2023", category: "Investment Banking", name: "Celina Liu", company: "Credit Suisse", group: "Technology", location: "New York, NY" },
       { type: "fulltime", year: "2023", category: "Investment Banking", name: "Hudson Bodourian", company: "Moelis & Company", group: "Generalist", location: "Los Angeles, CA" },
       { type: "fulltime", year: "2023", category: "Investment Banking", name: "Jay Bala", company: "Perella Weinberg Partners", group: "Technology M&A", location: "San Francisco, CA" },
@@ -233,7 +234,7 @@
       { type: "internships", year: "2023", category: "Finance", name: "Michael Huang", company: "Audax Private Equity", group: "Generalist", location: "San Francisco, CA" },
       { type: "internships", year: "2023", category: "Finance", name: "Patrick Lin", company: "KPMG", group: "Deal Advisory", location: "Taipei, TW" },
       { type: "internships", year: "2023", category: "Finance", name: "Rebecca Hu", company: "PIMCO", group: "Alternative Credit & Private Strategies", location: "Newport Beach, CA" },
-      { type: "internships", year: "2023", category: "Technology", name: "Tia Chang", company: "Databricks", group: "Product Management", location: "San Francisco, CA" },
+      { type: "internships", year: "2023", category: "Other", name: "Tia Chang", company: "Databricks", group: "Product Management", location: "San Francisco, CA" },
       { type: "fulltime", year: "2022", category: "Investment Banking", name: "Ankita Inamdar", company: "J.P. Morgan", group: "Healthcare", location: "New York, NY" },
       { type: "fulltime", year: "2022", category: "Investment Banking", name: "Anthony Vuong", company: "Citi", group: "Technology", location: "San Francisco, CA" },
       { type: "fulltime", year: "2022", category: "Investment Banking", name: "Ethan Qi", company: "J.P. Morgan", group: "Mergers & Acquisitions", location: "New York, NY" },
@@ -263,7 +264,7 @@
       { type: "internships", year: "2022", category: "Finance", name: "Michael Huang", company: "Audax Private Equity", group: "Generalist", location: "Boston, Massachusetts" },
       { type: "internships", year: "2022", category: "Finance", name: "Natalie Deng", company: "Alpine Investors", group: "Investing", location: "San Francisco, CA" },
       { type: "internships", year: "2022", category: "Finance", name: "Rohan Bhargava", company: "KKR", group: "Strategy", location: "New York, NY" },
-      { type: "internships", year: "2022", category: "Fintech", name: "Rohan Patel", company: "L I T", group: "Business Development", location: "New York, NY" },
+      { type: "internships", year: "2022", category: "Other", name: "Rohan Patel", company: "L I T", group: "Business Development", location: "New York, NY" },
       { type: "fulltime", year: "2021", category: "Investment Banking", name: "Adam Ramani", company: "Presidio Technology Partners", group: "Technology", location: "San Francisco, CA" },
       { type: "fulltime", year: "2021", category: "Investment Banking", name: "Andrew Naimark", company: "Bank of America Merrill Lynch", group: "Financial Sponsors", location: "New York, NY" },
       { type: "fulltime", year: "2021", category: "Investment Banking", name: "Claire Ho", company: "Morgan Stanley", group: "Financial Sponsors & Western Region Coverage", location: "San Francisco, CA" },
@@ -354,7 +355,7 @@
       { type: "internships", year: "2019", category: "Finance", name: "David Lu", company: "Barclays", group: "Equity Research", location: "New York, NY" },
       { type: "internships", year: "2019", category: "Finance", name: "Jonathan Rich", company: "KKR & Co. Inc.", group: "Leveraged Credit", location: "San Francisco, CA" },
       { type: "internships", year: "2019", category: "Finance", name: "Kelly Yu", company: "Vista Equity Partners", group: "Public Strategies", location: "San Francisco, CA" },
-      { type: "internships", year: "2019", category: "Technology", name: "Ryan Wong", company: "Salesforce", group: "Finance", location: "San Francisco, CA" },
+      { type: "internships", year: "2019", category: "Other", name: "Ryan Wong", company: "Salesforce", group: "Finance", location: "San Francisco, CA" },
       { type: "fulltime", year: "2018", category: "Investment Banking", name: "Eddie Lee", company: "Lazard Frères & Co.", group: "Healthcare M&A", location: "San Francisco, CA" },
       { type: "fulltime", year: "2018", category: "Investment Banking", name: "Harrison Hsieh", company: "Goldman Sachs", group: "Mergers & Acquisitions", location: "New York, NY" },
       { type: "fulltime", year: "2018", category: "Investment Banking", name: "Kabir Thakral", company: "Perella Weinberg Partners", group: "Generalist M&A/Restructuring", location: "New York, NY" },
@@ -392,8 +393,8 @@
       { type: "internships", year: "2018", category: "Finance", name: "Daniel Du", company: "Ares Management", group: "Private Equity", location: "Los Angeles, CA" },
       { type: "internships", year: "2018", category: "Finance", name: "Nick Palmer", company: "Matrix Capital Management", group: "Hedge Fund", location: "Palo Alto, CA" },
       { type: "internships", year: "2018", category: "Finance", name: "Tamlyn Chew", company: "Bank of America Merrill Lynch", group: "Global Banking and Markets", location: "San Francisco, CA" },
-      { type: "internships", year: "2018", category: "Technology", name: "Jacky Tian", company: "Amazon", group: "Software Engineering", location: "Seattle, WA" },
-      { type: "internships", year: "2018", category: "Technology", name: "Persis Shirazi", company: "SpaceX", group: "Marketing and Communications", location: "Los Angeles, CA" },
+      { type: "internships", year: "2018", category: "Other", name: "Jacky Tian", company: "Amazon", group: "Software Engineering", location: "Seattle, WA" },
+      { type: "internships", year: "2018", category: "Other", name: "Persis Shirazi", company: "SpaceX", group: "Marketing and Communications", location: "Los Angeles, CA" },
       { type: "fulltime", year: "2017", category: "Investment Banking", name: "Angad Singh Padda", company: "J.P. Morgan", group: "Healthcare", location: "San Francisco, CA" },
       { type: "fulltime", year: "2017", category: "Investment Banking", name: "Brian Yoon", company: "Allen & Co.", group: "Technology", location: "New York, NY" },
       { type: "fulltime", year: "2017", category: "Investment Banking", name: "David Liang", company: "Lazard Frères & Co.", group: "Technology", location: "San Francisco" },
@@ -429,7 +430,7 @@
       { type: "internships", year: "2017", category: "Finance", name: "Ryan Jusuf", company: "The Riverside Company", group: "Private Equity", location: "San Francisco, CA" },
       { type: "internships", year: "2017", category: "Finance", name: "Steven Fogel", company: "Group One Trading", group: "Equity Derivatives Trading", location: "Chicago, IL" },
       { type: "internships", year: "2017", category: "Finance", name: "Xiaowan Chu", company: "Khazanah Americas, Inc.", group: "Investments", location: "San Francisco, CA" },
-      { type: "internships", year: "2017", category: "Technology", name: "Persis Shirazi", company: "Indiegogo", group: "Inside Sales", location: "San Francisco, CA" },
+      { type: "internships", year: "2017", category: "Other", name: "Persis Shirazi", company: "Indiegogo", group: "Inside Sales", location: "San Francisco, CA" },
       { type: "fulltime", year: "2016", category: "Investment Banking", name: "Aashay Shah", company: "Lazard Frères & Co.", group: "Technology", location: "San Francisco, CA" },
       { type: "fulltime", year: "2016", category: "Investment Banking", name: "Adam Farrell", company: "Moelis & Company", group: "General Advisory", location: "New York, NY" },
       { type: "fulltime", year: "2016", category: "Investment Banking", name: "Andrew Schwab", company: "PJT Partners", group: "Technology M&A", location: "San Francisco, CA" },
@@ -464,7 +465,7 @@
       { type: "internships", year: "2016", category: "Finance", name: "Ryan Irwin", company: "Lowe Enterprises", group: "Real Estate Acquisitions", location: "Los Angeles, CA" },
       { type: "internships", year: "2016", category: "Finance", name: "Steph Huang", company: "CDIB Capital", group: "Private Equity", location: "Hong Kong" },
       { type: "internships", year: "2016", category: "Finance", name: "Tricia Sun", company: "Amgen", group: "Finance & Strategy", location: "Thousand Oaks, CA" },
-      { type: "internships", year: "2016", category: "Technology", name: "Harrison Shane", company: "Houzz", group: "Marketing Operations", location: "Palo Alto, CA" },
+      { type: "internships", year: "2016", category: "Other", name: "Harrison Shane", company: "Houzz", group: "Marketing Operations", location: "Palo Alto, CA" },
       { type: "fulltime", year: "2015", category: "Investment Banking", name: "Alexander Gavriel", company: "The Blackstone Group", group: "Mergers & Acquisitions", location: "San Francisco, CA" },
       { type: "fulltime", year: "2015", category: "Investment Banking", name: "Alexander Moskowitz", company: "Moelis & Company", group: "General Advisory", location: "New York, NY" },
       { type: "fulltime", year: "2015", category: "Investment Banking", name: "Amy Truong", company: "Morgan Stanley", group: "Mergers & Acquisitions", location: "New York, NY" },
@@ -476,7 +477,7 @@
       { type: "fulltime", year: "2015", category: "Investment Banking", name: "Paul Levchenko", company: "Perella Weinberg Partners", group: "Technology M&A", location: "San Francisco, CA" },
       { type: "fulltime", year: "2015", category: "Investment Banking", name: "Sandy McNaughton", company: "Centerview Partners", group: "General Advisory", location: "San Francisco, CA" },
       { type: "fulltime", year: "2015", category: "Finance", name: "David Saghian", company: "Deloitte Advisory", group: "Business Valuation", location: "Los Angeles, CA" },
-      { type: "fulltime", year: "2015", category: "Technology", name: "Neil Garde", company: "Google", group: "Software Engineering", location: "Mountain View CA" },
+      { type: "fulltime", year: "2015", category: "Other", name: "Neil Garde", company: "Google", group: "Software Engineering", location: "Mountain View CA" },
       { type: "internships", year: "2015", category: "Investment Banking", name: "Aashay Shah", company: "Citi", group: "General Advisory", location: "Hong Kong" },
       { type: "internships", year: "2015", category: "Investment Banking", name: "Adam Farrell", company: "The Raine Group", group: "General Advisory", location: "New York, NY" },
       { type: "internships", year: "2015", category: "Investment Banking", name: "Alice Zheng", company: "Raymond James	Technology", group: "Technology", location: "San Francisco, CA" },
@@ -546,7 +547,7 @@
     });
     let pos = 0;
     function animateMarquee() {
-      pos -= 1.2;
+      pos -= 0.9;
       if (Math.abs(pos) >= track.scrollWidth / 2) pos = 0;
       track.style.transform = `translateX(${pos}px)`;
       requestAnimationFrame(animateMarquee);
@@ -579,7 +580,7 @@
           (byCategory[cat] = byCategory[cat] || []).push(e);
         });
         // stable, sensible category order; anything unrecognized falls to the end alphabetically
-        const preferredOrder = ['Investment Banking', 'Consulting', 'Finance', 'Technology', 'Corporate', 'Fintech'];
+        const preferredOrder = ['Investment Banking', 'Consulting', 'Finance', 'Other'];
         const categories = Object.keys(byCategory).sort((a, b) => {
           const ai = preferredOrder.indexOf(a);
           const bi = preferredOrder.indexOf(b);
